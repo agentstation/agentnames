@@ -23,3 +23,64 @@ go.work.sum
 
 # env file
 .env
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Go binary and build output
+bin/
+build/
+dist/
+*.o
+*.a
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Additional Go-specific files
+vendor/  # Uncommented vendor directory
+*.prof   # CPU/Memory profiling files
+*.trace  # Execution trace files
+*.log    # Log files
+debug/   # Debug files directory
+
+# Local development files
+*.local
+*.local.*
+.env.*
+config.local.yaml
+
+# Additional temp/backup files
+*.bak
+*.tmp
+*.temp
+.*.swp
+.*.swo
+
+# Additional IDE/Editor files
+.history/
+*.sublime-workspace
+*.sublime-project
+.settings/
+.project
+.classpath
+*.iml
+
+# Coverage file
+coverage.txt
+coverage.out
+
+# devbox files
+.devbox/
