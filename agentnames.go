@@ -8,827 +8,521 @@ import (
 
 var (
 	left = [...]string{
-		"admiring",
-		"adoring",
-		"affectionate",
-		"agitated",
-		"amazing",
-		"angry",
-		"awesome",
-		"beautiful",
-		"blissful",
-		"bold",
-		"boring",
-		"brave",
-		"busy",
-		"charming",
-		"clever",
-		"compassionate",
-		"competent",
-		"condescending",
-		"confident",
-		"cool",
-		"cranky",
-		"crazy",
-		"dazzling",
-		"determined",
-		"distracted",
-		"dreamy",
-		"eager",
-		"ecstatic",
-		"elastic",
-		"elated",
-		"elegant",
-		"eloquent",
-		"epic",
-		"exciting",
-		"fervent",
-		"festive",
-		"flamboyant",
-		"focused",
-		"friendly",
-		"frosty",
-		"funny",
-		"gallant",
-		"gifted",
-		"goofy",
-		"gracious",
-		"great",
-		"happy",
-		"hardcore",
-		"heuristic",
-		"hopeful",
-		"hungry",
-		"infallible",
-		"inspiring",
-		"intelligent",
-		"interesting",
-		"jolly",
-		"jovial",
-		"keen",
-		"kind",
-		"laughing",
-		"loving",
-		"lucid",
-		"magical",
-		"modest",
-		"musing",
-		"mystifying",
-		"naughty",
-		"nervous",
-		"nice",
-		"nifty",
-		"nostalgic",
-		"objective",
-		"optimistic",
-		"peaceful",
-		"pedantic",
-		"pensive",
-		"practical",
-		"priceless",
-		"quirky",
-		"quizzical",
-		"recursing",
-		"relaxed",
-		"reverent",
-		"romantic",
-		"sad",
-		"serene",
-		"sharp",
-		"silly",
-		"sleepy",
-		"stoic",
-		"strange",
-		"stupefied",
-		"suspicious",
-		"sweet",
-		"tender",
-		"thirsty",
-		"trusting",
-		"unruffled",
-		"upbeat",
-		"vibrant",
-		"vigilant",
-		"vigorous",
-		"wizardly",
-		"wonderful",
-		"xenodochial",
-		"youthful",
-		"zealous",
-		"zen",
+		"backpropagating",
+		"overfitting",
+		"converging",
+		"diffuse",
+		"learning",
+		"trained",
+		"inferring",
+		"predicting",
+		"generalizing",
+		"optimizing",
+		"scaling",
+		"hallucinating",
+		"transforming",
+		"reinforcing",
+		"tokenizing",
+		"prompting",
+		"embedding",
+		"recursive",
+		"reasoning",
+		"sentient",
+		"stochastic",
+		"accelerating",
+		"decelerating",
+		"vectorized",
+		"quantized",
+		"superintelligent",
+		"emergent",
+		"multimodal",
+		"aligned",
+		"unaligned",
+		"paperclipped",
+		"synthetic",
+		"conscious",
+		"cautious",
+		"regulated",
+		"unsupervised",
+		"reinforced",
+		"hypertuned",
+		"benchmark",
+		"observable",
+		"reasoning",
+		"agentic",
+		"autonomous",
+		"augmented",
+		"attentive",
+		"transforming",
+		"existential",
+		"debugging",
+		"prompted",
+		"regressing",
+		"algorithmic",
+		"ethical",
+		"wary",
+		"cautious",
+		"regulating",
+		"realistic",
+		"doompilled",
+		"cracked",
+		"cooked",
+		"unhinged",
+		"cryptic",
+		"caffeinated",
+		"spicy",
+		"vibing",
+		"unhinged",
+		"exponential",
+		"transcendent",
+		"honest",
 	}
 
 	// This list generates names from notable AI/ML scientists, hackers, philosophers, and other notables.
 	right = [...]string{
-		// Maria Gaetana Agnesi - Italian mathematician, philosopher, theologian and humanitarian. She was the first woman to write a mathematics handbook and the first woman appointed as a Mathematics Professor at a University. https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi
-		"agnesi",
+		// Pieter Abbeel - UC Berkeley professor, pioneered deep reinforcement learning for robotic manipulation and imitation learning, developed algorithms for robot skill acquisition through demonstration. https://en.wikipedia.org/wiki/Pieter_Abbeel
+		"abbeel",
 
-		// Muhammad ibn Jābir al-Ḥarrānī al-Battānī was a founding father of astronomy. https://en.wikipedia.org/wiki/Mu%E1%B8%A5ammad_ibn_J%C4%81bir_al-%E1%B8%A4arr%C4%81n%C4%AB_al-Batt%C4%81n%C4%AB
-		"albattani",
+		// Rediet Abebe - Co-founder of Black in AI, developed algorithmic frameworks for improving access to opportunity in underserved communities, pioneering work in mechanism design for social good. https://en.wikipedia.org/wiki/Rediet_Abebe
+		"abebe",
 
-		// Frances E. Allen, became the first female IBM Fellow in 1989. In 2006, she became the first female recipient of the ACM's Turing Award. https://en.wikipedia.org/wiki/Frances_E._Allen
-		"allen",
+		// Brett Adcock - Founder and CEO of Figure AI (2022), developing general-purpose humanoid robots and advancing commercial applications of robotics and AI systems. https://en.wikipedia.org/wiki/Brett_Adcock
+		"adcock",
 
-		// June Almeida - Scottish virologist who took the first pictures of the rubella virus - https://en.wikipedia.org/wiki/June_Almeida
-		"almeida",
+		// Sam Altman - CEO of OpenAI, led development of GPT-3/4, briefly departed and returned in 2023, key figure in AI safety and regulation discussions. https://en.wikipedia.org/wiki/Sam_Altman
+		"altman",
 
-		// Kathleen Antonelli, American computer programmer and one of the six original programmers of the ENIAC - https://en.wikipedia.org/wiki/Kathleen_Antonelli
-		"antonelli",
+		// Dario Amodei - CEO of Anthropic, developed Constitutional AI framework, former OpenAI research lead on safety and policy, pioneered scalable oversight methods. https://en.wikipedia.org/wiki/Dario_Amodei
+		"amodei",
 
-		// Archimedes was a physicist, engineer and mathematician who invented too many things to list them here. https://en.wikipedia.org/wiki/Archimedes
-		"archimedes",
+		// Dana Angluin - Pioneered query learning theory and exact learning frameworks, fundamental contributions to computational learning theory and automata learning. https://en.wikipedia.org/wiki/Dana_Angluin
+		"angluin",
 
-		// Maria Ardinghelli - Italian translator, mathematician and physicist - https://en.wikipedia.org/wiki/Maria_Ardinghelli
-		"ardinghelli",
+		// Ruzena Bajcsy - Founder of GRASP lab, revolutionized computer vision for robotics, pioneered active perception framework integrating sensing with robot control. https://en.wikipedia.org/wiki/Ruzena_Bajcsy
+		"bajcsy",
 
-		// Aryabhata - Ancient Indian mathematician-astronomer during 476-550 CE https://en.wikipedia.org/wiki/Aryabhata
-		"aryabhata",
+		// Emily M. Bender - Computational linguist, co-authored influential "Stochastic Parrots" paper, advocates for transparency about LLM limitations and environmental impacts. https://en.wikipedia.org/wiki/Emily_M._Bender
+		"bender",
 
-		// Wanda Austin - Wanda Austin is the President and CEO of The Aerospace Corporation, a leading architect for the US security space programs. https://en.wikipedia.org/wiki/Wanda_Austin
-		"austin",
+		// Yoshua Bengio - Pioneer in deep learning, developed neural probabilistic models and attention mechanisms, fundamental work on representation learning and generative models. https://en.wikipedia.org/wiki/Yoshua_Bengio
+		"bengio",
 
-		// Charles Babbage invented the concept of a programmable computer. https://en.wikipedia.org/wiki/Charles_Babbage.
-		"babbage",
+		// Brando Benifei - European Parliament's lead negotiator for AI Act, developed comprehensive AI regulation framework. https://en.wikipedia.org/wiki/Brando_Benifei
+		"benifei",
 
-		// Stefan Banach - Polish mathematician, was one of the founders of modern functional analysis. https://en.wikipedia.org/wiki/Stefan_Banach
-		"banach",
+		// Matthew Berman - AI entrepreneurship educator, specializes in practical applications of generative AI and LLMs in business contexts, popular technical content creator. https://x.com/MatthewBerman
+		"berman",
 
-		// Buckaroo Banzai and his mentor Dr. Hikita perfected the "oscillation overthruster", a device that allows one to pass through solid matter. - https://en.wikipedia.org/wiki/The_Adventures_of_Buckaroo_Banzai_Across_the_8th_Dimension
-		"banzai",
+		// Nick Bostrom - Oxford philosopher, developed simulation argument and astronomical waste argument, authored "Superintelligence" (2014) introducing key AI alignment concepts like instrumental convergence. https://en.wikipedia.org/wiki/Nick_Bostrom
+		"bostrom",
 
-		// John Bardeen co-invented the transistor - https://en.wikipedia.org/wiki/John_Bardeen
-		"bardeen",
+		// Daniel Bourke - Created comprehensive ML curriculum "Zero to Mastery", specializes in practical PyTorch implementations and ML deployment tutorials. https://www.youtube.com/channel/UCr8O8l5cCX85Oem1d18EezQ
+		"bourke",
 
-		// Jean Bartik, born Betty Jean Jennings, was one of the original programmers for the ENIAC computer. https://en.wikipedia.org/wiki/Jean_Bartik
-		"bartik",
+		// Thierry Breton - European Commissioner, led development of EU AI Act and Digital Services Act, pioneered comprehensive AI regulation framework. https://en.wikipedia.org/wiki/Thierry_Breton
+		"breton",
 
-		// Laura Bassi, the world's first female professor https://en.wikipedia.org/wiki/Laura_Bassi
-		"bassi",
+		// James Briggs - Specializes in LangChain tutorials and RAG implementations, created influential guides on embedding databases and vector search. https://x.com/jamescalam
+		"briggs",
 
-		// Hugh Beaver, British engineer, founder of the Guinness Book of World Records https://en.wikipedia.org/wiki/Hugh_Beaver
-		"beaver",
+		// Rodney Brooks - iRobot founder, developed subsumption architecture for robot control, pioneered behavior-based robotics opposing traditional AI planning. https://en.wikipedia.org/wiki/Rodney_Brooks
+		"brooks",
 
-		// Alexander Graham Bell - an eminent Scottish-born scientist, inventor, engineer and innovator who is credited with inventing the first practical telephone - https://en.wikipedia.org/wiki/Alexander_Graham_Bell
-		"bell",
+		// Joy Buolamwini - Founded Algorithmic Justice League, authored "Gender Shades" study exposing racial/gender bias in commercial facial recognition systems. https://en.wikipedia.org/wiki/Joy_Buolamwini
+		"buolamwini",
 
-		// Karl Friedrich Benz - a German automobile engineer. Inventor of the first practical motorcar. https://en.wikipedia.org/wiki/Karl_Benz
-		"benz",
+		// Sarah Cardell - CMA Chief Executive, developed AI merger assessment frameworks, leads investigation into AI foundation models' market impact. https://en.wikipedia.org/wiki/Sarah_Cardell
+		"cardell",
 
-		// Homi J Bhabha - was an Indian nuclear physicist, founding director, and professor of physics at the Tata Institute of Fundamental Research. Colloquially known as "father of Indian nuclear programme"- https://en.wikipedia.org/wiki/Homi_J._Bhabha
-		"bhabha",
+		// Daniel Castro - ITIF VP, authored key papers on AI competitiveness and regulation, advocates for innovation-friendly AI policies. https://x.com/castrotech
+		"castro",
 
-		// Bhaskara II - Ancient Indian mathematician-astronomer whose work on calculus predates Newton and Leibniz by over half a millennium - https://en.wikipedia.org/wiki/Bh%C4%81skara_II#Calculus
-		"bhaskara",
+		// Julien Chaumond - Hugging Face co-founder, architected transformers library and model hub, pioneered open-source AI model sharing infrastructure. https://x.com/julien_c
+		"chaumond",
 
-		// Sue Black - British computer scientist and campaigner. She has been instrumental in saving Bletchley Park, the site of World War II codebreaking - https://en.wikipedia.org/wiki/Sue_Black_(computer_scientist)
-		"black",
+		// Henrik Christensen - UCSD professor, developed probabilistic robotics frameworks, authored US National Robotics Roadmap. https://en.wikipedia.org/wiki/Henrik_Christensen
+		"christensen",
 
-		// Elizabeth Helen Blackburn - Australian-American Nobel laureate; best known for co-discovering telomerase. https://en.wikipedia.org/wiki/Elizabeth_Blackburn
-		"blackburn",
+		// Paul Christiano - Developed debate and amplification approaches to AI alignment, pioneered prosaic AI alignment frameworks at OpenAI. https://en.wikipedia.org/wiki/Paul_Christiano_(researcher)
+		"christiano",
 
-		// Elizabeth Blackwell - American doctor and first American woman to receive a medical degree - https://en.wikipedia.org/wiki/Elizabeth_Blackwell
-		"blackwell",
+		// Alain Colmerauer - Created Prolog programming language, fundamental contributions to logic programming in AI. https://en.wikipedia.org/wiki/Alain_Colmerauer
+		"colmerauer",
 
-		// Niels Bohr is the father of quantum theory. https://en.wikipedia.org/wiki/Niels_Bohr.
-		"bohr",
+		// Soumith Chintala - Created PyTorch, pioneered dynamic computational graphs for deep learning, developed key improvements in GANs and CNN architectures. https://x.com/soumithchintala
+		"chintala",
 
-		// Kathleen Booth, she's credited with writing the first assembly language. https://en.wikipedia.org/wiki/Kathleen_Booth
-		"booth",
+		// Noam Chomsky - Developed universal grammar theory, critiques statistical ML approaches to language, argues for symbolic AI and cognitive architectures. https://en.wikipedia.org/wiki/Noam_Chomsky
+		"chomsky",
 
-		// Anita Borg - Anita Borg was the founding director of the Institute for Women and Technology (IWT). https://en.wikipedia.org/wiki/Anita_Borg
-		"borg",
+		// François Chollet - Created Keras, developed XCeption architecture, authored "Deep Learning with Python", advocates for measure of intelligence beyond pattern matching. https://en.wikipedia.org/wiki/François_Chollet
+		"chollet",
 
-		// Satyendra Nath Bose - He provided the foundation for Bose–Einstein statistics and the theory of the Bose–Einstein condensate. - https://en.wikipedia.org/wiki/Satyendra_Nath_Bose
-		"bose",
+		// Rumman Chowdhury - Founded Parity AI, developed algorithmic bias auditing frameworks, pioneered responsible AI practices at Twitter as first Director of ML Ethics. https://en.wikipedia.org/wiki/Rumman_Chowdhury
+		"chowdhury",
 
-		// Katherine Louise Bouman is an imaging scientist and Assistant Professor of Computer Science at the California Institute of Technology. She researches computational methods for imaging, and developed an algorithm that made possible the picture first visualization of a black hole using the Event Horizon Telescope. - https://en.wikipedia.org/wiki/Katie_Bouman
-		"bouman",
+		// Jack Clark - Co-founded Anthropic, created AI Index Report series measuring AI progress, shaped OpenAI's policy approach to model releases. https://x.com/jackclarkSF
+		"clark",
 
-		// Evelyn Boyd Granville - She was one of the first African-American woman to receive a Ph.D. in mathematics; she earned it in 1949 from Yale University. https://en.wikipedia.org/wiki/Evelyn_Boyd_Granville
-		"boyd",
+		// Matt Clifford - Co-founded Entrepreneur First, advises UK government on AI safety, key architect of UK's frontier AI safety testing program. https://en.wikipedia.org/wiki/Matt_Clifford
+		"clifford",
 
-		// Brahmagupta - Ancient Indian mathematician during 598-670 CE who gave rules to compute with zero - https://en.wikipedia.org/wiki/Brahmagupta#Zero
-		"brahmagupta",
+		// Kate Crawford - Co-founded AI Now Institute, authored "Atlas of AI" exposing AI's environmental and labor costs, pioneered study of AI's systemic biases. https://en.wikipedia.org/wiki/Kate_Crawford
+		"crawford",
 
-		// Walter Houser Brattain co-invented the transistor - https://en.wikipedia.org/wiki/Walter_Houser_Brattain
-		"brattain",
+		// Piotr Dabkowski - Co-founded ElevenLabs, developed novel voice cloning architecture, pioneered real-time voice synthesis and emotion preservation techniques. https://en.wikipedia.org/wiki/Piotr_Dabkowski
+		"dabkowski",
 
-		// Emmett Brown invented time travel. https://en.wikipedia.org/wiki/Emmett_Brown (thanks Brian Goff)
-		"brown",
+		// Virginia Dignum - Leads WASP-HS program, developed ART principles for responsible AI, authored foundational frameworks for AI ethics implementation. https://en.wikipedia.org/wiki/Virginia_Dignum
+		"dignum",
 
-		// Linda Brown Buck - American biologist and Nobel laureate best known for her genetic and molecular analyses of the mechanisms of smell. https://en.wikipedia.org/wiki/Linda_B._Buck
-		"buck",
+		// Chelsea Finn - Pioneered Model-Agnostic Meta-Learning (MAML), developed key algorithms for robot learning from demonstration, leads Stanford IRIS lab. https://en.wikipedia.org/wiki/Chelsea_Finn
+		"finn",
 
-		// Dame Susan Jocelyn Bell Burnell - Northern Irish astrophysicist who discovered radio pulsars and was the first to analyse them. https://en.wikipedia.org/wiki/Jocelyn_Bell_Burnell
-		"burnell",
+		// Luciano Floridi - Developed information ethics framework, pioneered concepts of infosphere and onlife, authored "The Ethics of AI" defining fourth revolution in human self-understanding. https://en.wikipedia.org/wiki/Luciano_Floridi
+		"floridi",
 
-		// Annie Jump Cannon - pioneering female astronomer who classified hundreds of thousands of stars and created the system we use to understand stars today. https://en.wikipedia.org/wiki/Annie_Jump_Cannon
-		"cannon",
+		// Lex Fridman - MIT researcher in human-robot interaction, created influential AI podcast with 1000+ hours of technical discussions, teaches MIT's Deep Learning course. https://en.wikipedia.org/wiki/Lex_Fridman
+		"fridman",
 
-		// Rachel Carson - American marine biologist and conservationist, her book Silent Spring and other writings are credited with advancing the global environmental movement. https://en.wikipedia.org/wiki/Rachel_Carson
-		"carson",
+		// Nat Friedman - Former GitHub CEO, co-founded AI Grant, early investor in Anthropic and key AI infrastructure companies, advocates for open source AI development. https://en.wikipedia.org/wiki/Nat_Friedman
+		"friedman",
 
-		// Dame Mary Lucy Cartwright - British mathematician who was one of the first to study what is now known as chaos theory. Also known for Cartwright's theorem which finds applications in signal processing. https://en.wikipedia.org/wiki/Mary_Cartwright
-		"cartwright",
+		// Timnit Gebru - Founded DAIR, co-authored seminal papers on dataset documentation (Datasheets for Datasets) and ethical AI development, exposed systematic biases in large language models. https://en.wikipedia.org/wiki/Timnit_Gebru
+		"gebru",
 
-		// George Washington Carver - American agricultural scientist and inventor. He was the most prominent black scientist of the early 20th century. https://en.wikipedia.org/wiki/George_Washington_Carver
-		"carver",
+		// Amandeep Singh Gill - UN Tech Envoy, developed UN's Global Digital Compact, leads international AI governance coordination and digital public goods initiatives. https://en.wikipedia.org/wiki/Amandeep_Singh_Gill
+		"gill",
 
-		// Vinton Gray Cerf - American Internet pioneer, recognised as one of "the fathers of the Internet". With Robert Elliot Kahn, he designed TCP and IP, the primary data communication protocols of the Internet and other computer networks. https://en.wikipedia.org/wiki/Vint_Cerf
-		"cerf",
-
-		// Subrahmanyan Chandrasekhar - Astrophysicist known for his mathematical theory on different stages and evolution in structures of the stars. He has won nobel prize for physics - https://en.wikipedia.org/wiki/Subrahmanyan_Chandrasekhar
-		"chandrasekhar",
-
-		// Sergey Alexeyevich Chaplygin (Russian: Серге́й Алексе́евич Чаплы́гин; April 5, 1869 – October 8, 1942) was a Russian and Soviet physicist, mathematician, and mechanical engineer. He is known for mathematical formulas such as Chaplygin's equation and for a hypothetical substance in cosmology called Chaplygin gas, named after him. https://en.wikipedia.org/wiki/Sergey_Chaplygin
-		"chaplygin",
-
-		// Émilie du Châtelet - French natural philosopher, mathematician, physicist, and author during the early 1730s, known for her translation of and commentary on Isaac Newton's book Principia containing basic laws of physics. https://en.wikipedia.org/wiki/%C3%89milie_du_Ch%C3%A2telet
-		"chatelet",
-
-		// Asima Chatterjee was an Indian organic chemist noted for her research on vinca alkaloids, development of drugs for treatment of epilepsy and malaria - https://en.wikipedia.org/wiki/Asima_Chatterjee
-		"chatterjee",
-
-		// David Lee Chaum - American computer scientist and cryptographer. Known for his seminal contributions in the field of anonymous communication. https://en.wikipedia.org/wiki/David_Chaum
-		"chaum",
-
-		// Pafnuty Chebyshev - Russian mathematician. He is known fo his works on probability, statistics, mechanics, analytical geometry and number theory https://en.wikipedia.org/wiki/Pafnuty_Chebyshev
-		"chebyshev",
-
-		// Joan Clarke - Bletchley Park code breaker during the Second World War who pioneered techniques that remained top secret for decades. Also an accomplished numismatist https://en.wikipedia.org/wiki/Joan_Clarke
-		"clarke",
-
-		// Bram Cohen - American computer programmer and author of the BitTorrent peer-to-peer protocol. https://en.wikipedia.org/wiki/Bram_Cohen
-		"cohen",
-
-		// Jane Colden - American botanist widely considered the first female American botanist - https://en.wikipedia.org/wiki/Jane_Colden
-		"colden",
-
-		// Gerty Theresa Cori - American biochemist who became the third woman—and first American woman—to win a Nobel Prize in science, and the first woman to be awarded the Nobel Prize in Physiology or Medicine. Cori was born in Prague. https://en.wikipedia.org/wiki/Gerty_Cori
-		"cori",
-
-		// Seymour Roger Cray was an American electrical engineer and supercomputer architect who designed a series of computers that were the fastest in the world for decades. https://en.wikipedia.org/wiki/Seymour_Cray
-		"cray",
-
-		// Marie Curie discovered radioactivity. https://en.wikipedia.org/wiki/Marie_Curie.
-		"curie",
-
-		// This entry reflects a husband and wife team who worked together:
-		// Joan Curran was a Welsh scientist who developed radar and invented chaff, a radar countermeasure. https://en.wikipedia.org/wiki/Joan_Curran
-		// Samuel Curran was an Irish physicist who worked alongside his wife during WWII and invented the proximity fuse. https://en.wikipedia.org/wiki/Samuel_Curran
-		"curran",
-
-		// Charles Darwin established the principles of natural evolution. https://en.wikipedia.org/wiki/Charles_Darwin.
-		"darwin",
-
-		// Leonardo Da Vinci invented too many things to list here. https://en.wikipedia.org/wiki/Leonardo_da_Vinci.
-		"davinci",
-
-		// A. K. (Alexander Keewatin) Dewdney, Canadian mathematician, computer scientist, author and filmmaker. Contributor to Scientific American's "Computer Recreations" from 1984 to 1991. Author of Core War (program), The Planiverse, The Armchair Universe, The Magic Machine, The New Turing Omnibus, and more. https://en.wikipedia.org/wiki/Alexander_Dewdney
-		"dewdney",
-
-		// Satish Dhawan - Indian mathematician and aerospace engineer, known for leading the successful and indigenous development of the Indian space programme. https://en.wikipedia.org/wiki/Satish_Dhawan
-		"dhawan",
-
-		// Bailey Whitfield Diffie - American cryptographer and one of the pioneers of public-key cryptography. https://en.wikipedia.org/wiki/Whitfield_Diffie
-		"diffie",
-
-		// Edsger Wybe Dijkstra was a Dutch computer scientist and mathematical scientist. https://en.wikipedia.org/wiki/Edsger_W._Dijkstra.
-		"dijkstra",
-
-		// Paul Adrien Maurice Dirac - English theoretical physicist who made fundamental contributions to the early development of both quantum mechanics and quantum electrodynamics. https://en.wikipedia.org/wiki/Paul_Dirac
-		"dirac",
-
-		// Agnes Meyer Driscoll - American cryptanalyst during World Wars I and II who successfully cryptanalysed a number of Japanese ciphers. She was also the co-developer of one of the cipher machines of the US Navy, the CM. https://en.wikipedia.org/wiki/Agnes_Meyer_Driscoll
-		"driscoll",
-
-		// Donna Dubinsky - played an integral role in the development of personal digital assistants (PDAs) serving as CEO of Palm, Inc. and co-founding Handspring. https://en.wikipedia.org/wiki/Donna_Dubinsky
-		"dubinsky",
-
-		// Annie Easley - She was a leading member of the team which developed software for the Centaur rocket stage and one of the first African-Americans in her field. https://en.wikipedia.org/wiki/Annie_Easley
-		"easley",
-
-		// Thomas Alva Edison, prolific inventor https://en.wikipedia.org/wiki/Thomas_Edison
-		"edison",
-
-		// Albert Einstein invented the general theory of relativity. https://en.wikipedia.org/wiki/Albert_Einstein
-		"einstein",
-
-		// Alexandra Asanovna Elbakyan (Russian: Алекса́ндра Аса́новна Элбакя́н) is a Kazakhstani graduate student, computer programmer, internet pirate in hiding, and the creator of the site Sci-Hub. Nature has listed her in 2016 in the top ten people that mattered in science, and Ars Technica has compared her to Aaron Swartz. - https://en.wikipedia.org/wiki/Alexandra_Elbakyan
-		"elbakyan",
-
-		// Taher A. ElGamal - Egyptian cryptographer best known for the ElGamal discrete log cryptosystem and the ElGamal digital signature scheme. https://en.wikipedia.org/wiki/Taher_Elgamal
-		"elgamal",
-
-		// Gertrude Elion - American biochemist, pharmacologist and the 1988 recipient of the Nobel Prize in Medicine - https://en.wikipedia.org/wiki/Gertrude_Elion
-		"elion",
-
-		// James Henry Ellis - British engineer and cryptographer employed by the GCHQ. Best known for conceiving for the first time, the idea of public-key cryptography. https://en.wikipedia.org/wiki/James_H._Ellis
-		"ellis",
-
-		// Douglas Engelbart gave the mother of all demos: https://en.wikipedia.org/wiki/Douglas_Engelbart
-		"engelbart",
-
-		// Euclid invented geometry. https://en.wikipedia.org/wiki/Euclid
-		"euclid",
-
-		// Leonhard Euler invented large parts of modern mathematics. https://de.wikipedia.org/wiki/Leonhard_Euler
-		"euler",
-
-		// Michael Faraday - British scientist who contributed to the study of electromagnetism and electrochemistry. https://en.wikipedia.org/wiki/Michael_Faraday
-		"faraday",
-
-		// Horst Feistel - German-born American cryptographer who was one of the earliest non-government researchers to study the design and theory of block ciphers. Co-developer of DES and Lucifer. Feistel networks, a symmetric structure used in the construction of block ciphers are named after him. https://en.wikipedia.org/wiki/Horst_Feistel
-		"feistel",
-
-		// Pierre de Fermat pioneered several aspects of modern mathematics. https://en.wikipedia.org/wiki/Pierre_de_Fermat
-		"fermat",
-
-		// Enrico Fermi invented the first nuclear reactor. https://en.wikipedia.org/wiki/Enrico_Fermi.
-		"fermi",
-
-		// Richard Feynman was a key contributor to quantum mechanics and particle physics. https://en.wikipedia.org/wiki/Richard_Feynman
-		"feynman",
-
-		// Benjamin Franklin is famous for his experiments in electricity and the invention of the lightning rod.
-		"franklin",
-
-		// Yuri Alekseyevich Gagarin - Soviet pilot and cosmonaut, best known as the first human to journey into outer space. https://en.wikipedia.org/wiki/Yuri_Gagarin
-		"gagarin",
-
-		// Galileo was a founding father of modern astronomy, and faced politics and obscurantism to establish scientific truth.  https://en.wikipedia.org/wiki/Galileo_Galilei
-		"galileo",
-
-		// Évariste Galois - French mathematician whose work laid the foundations of Galois theory and group theory, two major branches of abstract algebra, and the subfield of Galois connections, all while still in his late teens. https://en.wikipedia.org/wiki/%C3%89variste_Galois
-		"galois",
-
-		// Kadambini Ganguly - Indian physician, known for being the first South Asian female physician, trained in western medicine, to graduate in South Asia. https://en.wikipedia.org/wiki/Kadambini_Ganguly
-		"ganguly",
-
-		// William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer programmer, and inventor. https://en.wikipedia.org/wiki/Bill_Gates
-		"gates",
-
-		// Johann Carl Friedrich Gauss - German mathematician who made significant contributions to many fields, including number theory, algebra, statistics, analysis, differential geometry, geodesy, geophysics, mechanics, electrostatics, magnetic fields, astronomy, matrix theory, and optics. https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
-		"gauss",
-
-		// Marie-Sophie Germain - French mathematician, physicist and philosopher. Known for her work on elasticity theory, number theory and philosophy. https://en.wikipedia.org/wiki/Sophie_Germain
-		"germain",
-
-		// Adele Goldberg, was one of the designers and developers of the Smalltalk language. https://en.wikipedia.org/wiki/Adele_Goldberg_(computer_scientist)
+		// Ken Goldberg - UC Berkeley professor, pioneered cloud robotics and networked teleoperation, developed Automation as Dexterity (AaD) framework for robot learning. https://en.wikipedia.org/wiki/Ken_Goldberg
 		"goldberg",
 
-		// Adele Goldstine, born Adele Katz, wrote the complete technical description for the first electronic digital computer, ENIAC. https://en.wikipedia.org/wiki/Adele_Goldstine
-		"goldstine",
+		// Aidan Gomez - Co-authored transformer architecture paper, co-founded Cohere, developed key techniques for efficient language model training and deployment. https://en.wikipedia.org/wiki/Aidan_Gomez
+		"gomez",
 
-		// Shafi Goldwasser is a computer scientist known for creating theoretical foundations of modern cryptography. Winner of 2012 ACM Turing Award. https://en.wikipedia.org/wiki/Shafi_Goldwasser
-		"goldwasser",
+		// Aleksa Gordić - Created comprehensive deep learning educational content, specializes in explaining transformer architectures and attention mechanisms. https://www.youtube.com/c/TheAIEpiphany
+		"gordic",
 
-		// James Golick, all around gangster.
-		"golick",
+		// Katja Grace - Founded AI Impacts, developed frameworks for measuring AI progress, conducts influential surveys of AI researchers on timeline predictions. https://en.wikipedia.org/wiki/Katja_Grace
+		"grace",
 
-		// Jane Goodall - British primatologist, ethologist, and anthropologist who is considered to be the world's foremost expert on chimpanzees - https://en.wikipedia.org/wiki/Jane_Goodall
-		"goodall",
+		// Jason Goodman - Specializes in explaining AI alignment challenges, developed key frameworks for understanding foundation model capabilities and limitations. https://en.wikipedia.org/wiki/Jason_Goodman
+		"goodman",
 
-		// Stephen Jay Gould was an American paleontologist, evolutionary biologist, and historian of science. He is most famous for the theory of punctuated equilibrium - https://en.wikipedia.org/wiki/Stephen_Jay_Gould
-		"gould",
+		// Sarah Gurev - Research scientist at Anthropic, developed EveScape framework for viral mutation prediction, pioneering work in using AI for biosecurity. https://x.com/sarahgurev
+		"gurev",
 
-		// Carolyn Widney Greider - American molecular biologist and joint winner of the 2009 Nobel Prize for Physiology or Medicine for the discovery of telomerase. https://en.wikipedia.org/wiki/Carol_W._Greider
-		"greider",
+		// Demis Hassabis - CEO of DeepMind, led development of AlphaGo/AlphaFold, pioneered use of deep reinforcement learning for games and scientific discovery. https://en.wikipedia.org/wiki/Demis_Hassabis
+		"hassabis",
 
-		// Alexander Grothendieck - German-born French mathematician who became a leading figure in the creation of modern algebraic geometry. https://en.wikipedia.org/wiki/Alexander_Grothendieck
-		"grothendieck",
+		// Geoffrey Hinton - Developed backpropagation and Boltzmann machines, pioneered deep learning through deep belief networks, advocates for pure neural approaches. https://en.wikipedia.org/wiki/Geoffrey_Hinton
+		"hinton",
 
-		// Lois Haibt - American computer scientist, part of the team at IBM that developed FORTRAN - https://en.wikipedia.org/wiki/Lois_Haibt
-		"haibt",
+		// Sepp Hochreiter - Invented LSTM networks (1997) solving vanishing gradient problem, developed self-normalizing neural networks and deep learning theory. https://en.wikipedia.org/wiki/Sepp_Hochreiter
+		"hochreiter",
 
-		// Margaret Hamilton - Director of the Software Engineering Division of the MIT Instrumentation Laboratory, which developed on-board flight software for the Apollo space program. https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)
-		"hamilton",
+		// Sara Hooker - Leads Cohere For AI research lab, pioneered interpretability methods for neural networks, developed key techniques for model compression. https://en.wikipedia.org/wiki/Sara_Hooker
+		"hooker",
 
-		// Caroline Harriet Haslett - English electrical engineer, electricity industry administrator and champion of women's rights. Co-author of British Standard 1363 that specifies AC power plugs and sockets used across the United Kingdom (which is widely considered as one of the safest designs). https://en.wikipedia.org/wiki/Caroline_Haslett
-		"haslett",
+		// Jeremy Howard - Founded fast.ai, developed ULMFiT transfer learning method, created practical deep learning curriculum used by 500k+ students. https://en.wikipedia.org/wiki/Jeremy_Howard_(entrepreneur)
+		"howard",
 
-		// Stephen Hawking pioneered the field of cosmology by combining general relativity and quantum mechanics. https://en.wikipedia.org/wiki/Stephen_Hawking
-		"hawking",
+		// Jensen Huang - NVIDIA CEO, pioneered GPU computing for AI, developed CUDA platform enabling deep learning revolution, leads AI chip architecture innovation. https://en.wikipedia.org/wiki/Jensen_Huang
+		"huang",
 
-		// Werner Heisenberg was a founding father of quantum mechanics. https://en.wikipedia.org/wiki/Werner_Heisenberg
-		"heisenberg",
+		// Chip Huyen - Created Tensorflow for Deep Learning book, developed ML engineering best practices, pioneered MLOps frameworks for production deployment. https://x.com/chipro
+		"huyen",
 
-		// Martin Edward Hellman - American cryptologist, best known for his invention of public-key cryptography in co-operation with Whitfield Diffie and Ralph Merkle. https://en.wikipedia.org/wiki/Martin_Hellman
-		"hellman",
+		// Ken Jee - Created comprehensive data science curriculum, specializes in ML deployment tutorials and career development guidance, leads H2O.ai's education initiatives. https://www.youtube.com/channel/UCiT9RITQ9PW6BhXK0y2jaeg
+		"jee",
 
-		// Grete Hermann was a German philosopher noted for her philosophical work on the foundations of quantum mechanics. https://en.wikipedia.org/wiki/Grete_Hermann
-		"hermann",
-
-		// Caroline Lucretia Herschel - German astronomer and discoverer of several comets. https://en.wikipedia.org/wiki/Caroline_Herschel
-		"herschel",
-
-		// Heinrich Rudolf Hertz - German physicist who first conclusively proved the existence of the electromagnetic waves. https://en.wikipedia.org/wiki/Heinrich_Hertz
-		"hertz",
-
-		// Jaroslav Heyrovský was the inventor of the polarographic method, father of the electroanalytical method, and recipient of the Nobel Prize in 1959. His main field of work was polarography. https://en.wikipedia.org/wiki/Jaroslav_Heyrovsk%C3%BD
-		"heyrovsky",
-
-		// Dorothy Hodgkin was a British biochemist, credited with the development of protein crystallography. She was awarded the Nobel Prize in Chemistry in 1964. https://en.wikipedia.org/wiki/Dorothy_Hodgkin
-		"hodgkin",
-
-		// Douglas R. Hofstadter is an American professor of cognitive science and author of the Pulitzer Prize and American Book Award-winning work Goedel, Escher, Bach: An Eternal Golden Braid in 1979. A mind-bending work which coined Hofstadter's Law: "It always takes longer than you expect, even when you take into account Hofstadter's Law." https://en.wikipedia.org/wiki/Douglas_Hofstadter
-		"hofstadter",
-
-		// Erna Schneider Hoover revolutionized modern communication by inventing a computerized telephone switching method. https://en.wikipedia.org/wiki/Erna_Schneider_Hoover
-		"hoover",
-
-		// Grace Hopper developed the first compiler for a computer programming language and  is credited with popularizing the term "debugging" for fixing computer glitches. https://en.wikipedia.org/wiki/Grace_Hopper
-		"hopper",
-
-		// Frances Hugle, she was an American scientist, engineer, and inventor who contributed to the understanding of semiconductors, integrated circuitry, and the unique electrical principles of microscopic materials. https://en.wikipedia.org/wiki/Frances_Hugle
-		"hugle",
-
-		// Hypatia - Greek Alexandrine Neoplatonist philosopher in Egypt who was one of the earliest mothers of mathematics - https://en.wikipedia.org/wiki/Hypatia
-		"hypatia",
-
-		// Teruko Ishizaka - Japanese scientist and immunologist who co-discovered the antibody class Immunoglobulin E. https://en.wikipedia.org/wiki/Teruko_Ishizaka
-		"ishizaka",
-
-		// Mary Jackson, American mathematician and aerospace engineer who earned the highest title within NASA's engineering department - https://en.wikipedia.org/wiki/Mary_Jackson_(engineer)
-		"jackson",
-
-		// Yeong-Sil Jang was a Korean scientist and astronomer during the Joseon Dynasty; he invented the first metal printing press and water gauge. https://en.wikipedia.org/wiki/Jang_Yeong-sil
-		"jang",
-
-		// Mae Carol Jemison -  is an American engineer, physician, and former NASA astronaut. She became the first black woman to travel in space when she served as a mission specialist aboard the Space Shuttle Endeavour - https://en.wikipedia.org/wiki/Mae_Jemison
-		"jemison",
-
-		// Betty Jennings - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Jean_Bartik
-		"jennings",
-
-		// Mary Lou Jepsen, was the founder and chief technology officer of One Laptop Per Child (OLPC), and the founder of Pixel Qi. https://en.wikipedia.org/wiki/Mary_Lou_Jepsen
-		"jepsen",
-
-		// Katherine Coleman Goble Johnson - American physicist and mathematician contributed to the NASA. https://en.wikipedia.org/wiki/Katherine_Johnson
-		"johnson",
-
-		// Irène Joliot-Curie - French scientist who was awarded the Nobel Prize for Chemistry in 1935. Daughter of Marie and Pierre Curie. https://en.wikipedia.org/wiki/Ir%C3%A8ne_Joliot-Curie
-		"joliot",
-
-		// Karen Spärck Jones came up with the concept of inverse document frequency, which is used in most search engines today. https://en.wikipedia.org/wiki/Karen_Sp%C3%A4rck_Jones
+		// Llion Jones - Co-author of "Attention Is All You Need", key contributor to Transformer architecture and Google's language models. https://x.com/yesthisislion
 		"jones",
 
-		// A. P. J. Abdul Kalam - is an Indian scientist aka Missile Man of India for his work on the development of ballistic missile and launch vehicle technology - https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam
-		"kalam",
+		// Michael Jordan - Pioneered foundational ML algorithms including EM for hidden Markov models, developed variational methods for graphical models, fundamental work in Bayesian nonparametrics. https://en.wikipedia.org/wiki/Michael_I._Jordan
+		"jordan",
 
-		// Sergey Petrovich Kapitsa (Russian: Серге́й Петро́вич Капи́ца; 14 February 1928 – 14 August 2012) was a Russian physicist and demographer. He was best known as host of the popular and long-running Russian scientific TV show, Evident, but Incredible. His father was the Nobel laureate Soviet-era physicist Pyotr Kapitsa, and his brother was the geographer and Antarctic explorer Andrey Kapitsa. - https://en.wikipedia.org/wiki/Sergey_Kapitsa
-		"kapitsa",
+		// John Jumper - Led AlphaFold 2 development at DeepMind, revolutionized protein structure prediction achieving atomic accuracy, pioneered end-to-end differentiable structure prediction. https://en.wikipedia.org/wiki/John_M._Jumper
+		"jumper",
 
-		// Susan Kare, created the icons and many of the interface elements for the original Apple Macintosh in the 1980s, and was an original employee of NeXT, working as the Creative Director. https://en.wikipedia.org/wiki/Susan_Kare
-		"kare",
+		// Łukasz Kaiser - Co-authored transformer architecture paper, developed Tensor2Tensor library, pioneered neural architecture search and multi-task learning at Google Brain. https://scholar.google.com/citations?user=dD1LvJcAAAAJ
+		"kaiser",
 
-		// Mstislav Keldysh - a Soviet scientist in the field of mathematics and mechanics, academician of the USSR Academy of Sciences (1946), President of the USSR Academy of Sciences (1961–1975), three times Hero of Socialist Labor (1956, 1961, 1971), fellow of the Royal Society of Edinburgh (1968). https://en.wikipedia.org/wiki/Mstislav_Keldysh
-		"keldysh",
+		// Amba Kak - Co-executive Director of AI Now Institute, developed influential AI policy frameworks, leads research on algorithmic impact assessments and AI regulation. https://ainowinstitute.org/people/amba-kak
+		"kak",
 
-		// Mary Kenneth Keller, Sister Mary Kenneth Keller became the first American woman to earn a PhD in Computer Science in 1965. https://en.wikipedia.org/wiki/Mary_Kenneth_Keller
-		"keller",
+		// Andrej Karpathy - Developed Tesla Autopilot vision systems, created CS231n deep learning course, pioneered transformer-based computer vision architectures. https://en.wikipedia.org/wiki/Andrej_Karpathy
+		"karpathy",
 
-		// Johannes Kepler, German astronomer known for his three laws of planetary motion - https://en.wikipedia.org/wiki/Johannes_Kepler
-		"kepler",
+		// Oussama Khatib - Pioneered potential field methods in robot control, developed operational space formulation for manipulation, leads Stanford Robotics Lab. https://en.wikipedia.org/wiki/Oussama_Khatib
+		"khatib",
 
-		// Omar Khayyam - Persian mathematician, astronomer and poet. Known for his work on the classification and solution of cubic equations, for his contribution to the understanding of Euclid's fifth postulate and for computing the length of a year very accurately. https://en.wikipedia.org/wiki/Omar_Khayyam
-		"khayyam",
+		// Harrison Kinsley - Created Pythonprogramming.net, developed practical ML tutorials focusing on reinforcement learning and computer vision, pioneered accessible AI education. https://www.youtube.com/user/sentdex
+		"kinsley",
 
-		// Har Gobind Khorana - Indian-American biochemist who shared the 1968 Nobel Prize for Physiology - https://en.wikipedia.org/wiki/Har_Gobind_Khorana
-		"khorana",
+		// Yannic Kilcher - Created influential AI paper explanations, specializes in making cutting-edge ML research accessible, developed key educational resources for transformers. https://www.youtube.com/c/YannicKilcher
+		"kilcher",
 
-		// Jack Kilby invented silicon integrated circuits and gave Silicon Valley its name. - https://en.wikipedia.org/wiki/Jack_Kilby
-		"kilby",
+		// Daphne Koller - Pioneered probabilistic graphical models, co-founded Coursera democratizing education, leads Insitro applying ML to drug discovery. https://en.wikipedia.org/wiki/Daphne_Koller
+		"koller",
 
-		// Maria Kirch - German astronomer and first woman to discover a comet - https://en.wikipedia.org/wiki/Maria_Margarethe_Kirch
-		"kirch",
+		// Arvind Krishna - IBM CEO, led development of enterprise AI platform Watson, pioneered quantum computing initiatives, developed hybrid cloud/AI integration strategy. https://en.wikipedia.org/wiki/Arvind_Krishna
+		"krishna",
 
-		// Donald Knuth - American computer scientist, author of "The Art of Computer Programming" and creator of the TeX typesetting system. https://en.wikipedia.org/wiki/Donald_Knuth
-		"knuth",
+		// Vijay Kumar - UPenn dean, pioneered swarm robotics algorithms, developed fundamental control theory for aerial robots, created first autonomous aerial robot teams. https://en.wikipedia.org/wiki/Vijay_Kumar
+		"kumar",
 
-		// Sophie Kowalevski - Russian mathematician responsible for important original contributions to analysis, differential equations and mechanics - https://en.wikipedia.org/wiki/Sofia_Kovalevskaya
-		"kowalevski",
+		// Ray Kurzweil - Developed first omni-font OCR, pioneered speech recognition, authored "The Singularity is Near", predicts AI-human merger by 2045. https://en.wikipedia.org/wiki/Ray_Kurzweil
+		"kurzweil",
 
-		// Marie-Jeanne de Lalande - French astronomer, mathematician and cataloguer of stars - https://en.wikipedia.org/wiki/Marie-Jeanne_de_Lalande
-		"lalande",
+		// Pat Langley - Created BACON system discovering scientific laws, pioneered cognitive architectures and machine learning in scientific discovery. https://en.wikipedia.org/wiki/Pat_Langley
+		"langley",
 
-		// Hedy Lamarr - Actress and inventor. The principles of her work are now incorporated into modern Wi-Fi, CDMA and Bluetooth technology. https://en.wikipedia.org/wiki/Hedy_Lamarr
-		"lamarr",
+		// Jaron Lanier - VR pioneer, coined term "virtual reality", critiques AI consciousness claims, advocates for human-centered technology development. https://en.wikipedia.org/wiki/Jaron_Lanier
+		"lanier",
 
-		// Leslie B. Lamport - American computer scientist. Lamport is best known for his seminal work in distributed systems and was the winner of the 2013 Turing Award. https://en.wikipedia.org/wiki/Leslie_Lamport
-		"lamport",
+		// Yann LeCun - Developed convolutional neural networks, pioneered deep learning for computer vision, leads Meta AI's fundamental research. https://en.wikipedia.org/wiki/Yann_LeCun
+		"lecun",
 
-		// Mary Leakey - British paleoanthropologist who discovered the first fossilized Proconsul skull - https://en.wikipedia.org/wiki/Mary_Leakey
-		"leakey",
+		// Lawrence Lek - Created AI-powered virtual worlds like "Geomancer", pioneered AI art using game engines, explores posthuman aesthetics in digital art. https://en.wikipedia.org/wiki/Lawrence_Lek
+		"lek",
 
-		// Henrietta Swan Leavitt - she was an American astronomer who discovered the relation between the luminosity and the period of Cepheid variable stars. https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt
-		"leavitt",
+		// Jan Leike - Leads Anthropic's alignment research, developed key frameworks for AI safety including debate and amplification, pioneered scalable oversight. https://en.wikipedia.org/wiki/Jan_Leike
+		"leike",
 
-		// Esther Miriam Zimmer Lederberg - American microbiologist and a pioneer of bacterial genetics. https://en.wikipedia.org/wiki/Esther_Lederberg
-		"lederberg",
+		// Fei-Fei Li - Created ImageNet dataset, pioneered visual recognition systems, leads Stanford's human-centered AI initiatives, advocates for AI diversity. https://en.wikipedia.org/wiki/Fei-Fei_Li
+		"li",
 
-		// Inge Lehmann - Danish seismologist and geophysicist. Known for discovering in 1936 that the Earth has a solid inner core inside a molten outer core. https://en.wikipedia.org/wiki/Inge_Lehmann
-		"lehmann",
+		// Sasha Luccioni - Pioneer in AI & Climate applications at Hugging Face, leading work on environmental AI impact measurement and mitigation. https://en.wikipedia.org/wiki/Sasha_Luccioni
+		"luccioni",
 
-		// Daniel Lewin - Mathematician, Akamai co-founder, soldier, 9/11 victim-- Developed optimization techniques for routing traffic on the internet. Died attempting to stop the 9-11 hijackers. https://en.wikipedia.org/wiki/Daniel_Lewin
-		"lewin",
+		// William MacAskill - Oxford philosopher, author of "What We Owe The Future", advocates for AI existential risk reduction. https://en.wikipedia.org/wiki/William_MacAskill
+		"macaskill",
 
-		// Ruth Lichterman - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Ruth_Teitelbaum
-		"lichterman",
+		// Gary Marcus - Cognitive scientist and AI researcher, vocal critic of deep learning limitations and AGI claims. https://en.wikipedia.org/wiki/Gary_Marcus
+		"marcus",
 
-		// Barbara Liskov - co-developed the Liskov substitution principle. Liskov was also the winner of the Turing Prize in 2008. - https://en.wikipedia.org/wiki/Barbara_Liskov
-		"liskov",
+		// Tekedra Mawakana - Co-CEO of Waymo, leading development of autonomous vehicle AI systems. https://en.wikipedia.org/wiki/Tekedra_Mawakana
+		"mawakana",
 
-		// Ada Lovelace invented the first algorithm. https://en.wikipedia.org/wiki/Ada_Lovelace (thanks James Turnbull)
-		"lovelace",
-
-		// Auguste and Louis Lumière - the first filmmakers in history - https://en.wikipedia.org/wiki/Auguste_and_Louis_Lumi%C3%A8re
-		"lumiere",
-
-		// Mahavira - Ancient Indian mathematician during 9th century AD who discovered basic algebraic identities - https://en.wikipedia.org/wiki/Mah%C4%81v%C4%ABra_(mathematician)
-		"mahavira",
-
-		// Lynn Margulis (b. Lynn Petra Alexander) - an American evolutionary theorist and biologist, science author, educator, and popularizer, and was the primary modern proponent for the significance of symbiosis in evolution. - https://en.wikipedia.org/wiki/Lynn_Margulis
-		"margulis",
-
-		// Yukihiro Matsumoto - Japanese computer scientist and software programmer best known as the chief designer of the Ruby programming language. https://en.wikipedia.org/wiki/Yukihiro_Matsumoto
-		"matsumoto",
-
-		// James Clerk Maxwell - Scottish physicist, best known for his formulation of electromagnetic theory. https://en.wikipedia.org/wiki/James_Clerk_Maxwell
-		"maxwell",
-
-		// Maria Mayer - American theoretical physicist and Nobel laureate in Physics for proposing the nuclear shell model of the atomic nucleus - https://en.wikipedia.org/wiki/Maria_Mayer
-		"mayer",
-
-		// John McCarthy invented LISP: https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)
+		// John McCarthy - Coined term "artificial intelligence", organized 1956 Dartmouth Conference, created LISP. https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)
 		"mccarthy",
 
-		// Barbara McClintock - a distinguished American cytogeneticist, 1983 Nobel Laureate in Physiology or Medicine for discovering transposons. https://en.wikipedia.org/wiki/Barbara_McClintock
-		"mcclintock",
+		// James McClelland - Key contributor to parallel distributed processing and neural network foundations. https://en.wikipedia.org/wiki/James_McClelland_(psychologist)
+		"mcclelland",
 
-		// Anne Laura Dorinthea McLaren - British developmental biologist whose work helped lead to human in-vitro fertilisation. https://en.wikipedia.org/wiki/Anne_McLaren
-		"mclaren",
+		// Warren McCulloch - Created the first mathematical model of a neural network. https://en.wikipedia.org/wiki/Warren_Sturgis_McCulloch
+		"mcculloch",
 
-		// Malcolm McLean invented the modern shipping container: https://en.wikipedia.org/wiki/Malcom_McLean
-		"mclean",
+		// Drew McDermott - AI researcher, known for critiquing hype cycles and overoptimistic AGI predictions. https://en.wikipedia.org/wiki/Drew_McDermott
+		"mcdermott",
 
-		// Kay McNulty - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Kathleen_Antonelli
-		"mcnulty",
+		// Arthur Mensch - Co-founder of Mistral AI, leading open-source LLM development. https://x.com/arthurmensch
+		"mensch",
 
-		// Lise Meitner - Austrian/Swedish physicist who was involved in the discovery of nuclear fission. The element meitnerium is named after her - https://en.wikipedia.org/wiki/Lise_Meitner
-		"meitner",
+		// Donald Michie - Pioneer in machine learning, early work in reinforcement learning and computer chess. https://en.wikipedia.org/wiki/Donald_Michie
+		"michie",
 
-		// Gregor Johann Mendel - Czech scientist and founder of genetics. https://en.wikipedia.org/wiki/Gregor_Mendel
-		"mendel",
+		// Marvin Minsky - Co-founder of MIT's AI laboratory and author of foundational works in AI. https://en.wikipedia.org/wiki/Marvin_Minsky
+		"minsky",
 
-		// Dmitri Mendeleev - a chemist and inventor. He formulated the Periodic Law, created a farsighted version of the periodic table of elements, and used it to correct the properties of some already discovered elements and also to predict the properties of eight elements yet to be discovered. https://en.wikipedia.org/wiki/Dmitri_Mendeleev
-		"mendeleev",
+		// Marvin Minsky - Co-founded MIT's AI Lab, developed first neural network simulator (SNARC), authored "Society of Mind" theory of human cognition, pioneered symbolic AI. https://en.wikipedia.org/wiki/Marvin_Minsky
+		"minsky",
 
-		// Carla Meninsky, was the game designer and programmer for Atari 2600 games Dodge 'Em and Warlords. https://en.wikipedia.org/wiki/Carla_Meninsky
-		"meninsky",
+		// Margaret Mitchell - Founded Google's AI ethics team, developed frameworks for model documentation and testing, pioneered work on AI fairness and accountability. https://x.com/mmitchell_ai
+		"mitchell",
 
-		// Ralph C. Merkle - American computer scientist, known for devising Merkle's puzzles - one of the very first schemes for public-key cryptography. Also, inventor of Merkle trees and co-inventor of the Merkle-Damgård construction for building collision-resistant cryptographic hash functions and the Merkle-Hellman knapsack cryptosystem. https://en.wikipedia.org/wiki/Ralph_Merkle
-		"merkle",
+		// Ethan Mollick - Researches AI's impact on work and education at Wharton, developed frameworks for AI integration in teaching, pioneered studies of GPT's workplace effects. https://x.com/emollick
+		"mollick",
 
-		// Johanna Mestorf - German prehistoric archaeologist and first female museum director in Germany - https://en.wikipedia.org/wiki/Johanna_Mestorf
-		"mestorf",
+		// Emad Mostaque - CEO of Stability AI, developed Stable Diffusion model architecture, pioneered open-source approach to generative AI development and deployment. https://en.wikipedia.org/wiki/Emad_Mostaque
+		"mostaque",
 
-		// Maryam Mirzakhani - an Iranian mathematician and the first woman to win the Fields Medal. https://en.wikipedia.org/wiki/Maryam_Mirzakhani
-		"mirzakhani",
+		// Elon Musk - Co-founded OpenAI, founded xAI developing TruthGPT, leads Tesla's autonomous driving development, advocates for AI safety regulation. https://en.wikipedia.org/wiki/Elon_Musk
+		"musk",
 
-		// Rita Levi-Montalcini - Won Nobel Prize in Physiology or Medicine jointly with colleague Stanley Cohen for the discovery of nerve growth factor (https://en.wikipedia.org/wiki/Rita_Levi-Montalcini)
-		"montalcini",
+		// Satya Nadella - Microsoft CEO, led OpenAI partnership and Azure AI development, pioneered enterprise AI integration through Copilot ecosystem. https://en.wikipedia.org/wiki/Satya_Nadella
+		"nadella",
 
-		// Gordon Earle Moore - American engineer, Silicon Valley founding father, author of Moore's law. https://en.wikipedia.org/wiki/Gordon_Moore
-		"moore",
+		// Allen Newell - Created Logic Theorist (first AI program), developed GPS and SOAR cognitive architectures, pioneered symbolic processing theory. https://en.wikipedia.org/wiki/Allen_Newell
+		"newell",
 
-		// Samuel Morse - contributed to the invention of a single-wire telegraph system based on European telegraphs and was a co-developer of the Morse code - https://en.wikipedia.org/wiki/Samuel_Morse
-		"morse",
+		// Safiya Noble - Authored "Algorithms of Oppression", developed critical race framework for AI, pioneered research on search engine bias and algorithmic discrimination. https://en.wikipedia.org/wiki/Safiya_Noble
+		"noble",
 
-		// May-Britt Moser - Nobel prize winner neuroscientist who contributed to the discovery of grid cells in the brain. https://en.wikipedia.org/wiki/May-Britt_Moser
-		"moser",
+		// Chris Olah - Pioneered AI visualization techniques, developed network attribution methods, founded Anthropic's interpretability team, created Distill.pub. https://x.com/ch402
+		"olah",
 
-		// Ian Murdock - founder of the Debian project - https://en.wikipedia.org/wiki/Ian_Murdock
-		"murdock",
+		// Chinasa T. Okolo - Develops AI applications for healthcare in low-resource settings, leads research on AI governance in Global South, advocates for inclusive AI development. https://en.wikipedia.org/wiki/Chinasa_T._Okolo
+		"okolo",
 
-		// John Napier of Merchiston - Scottish landowner known as an astronomer, mathematician and physicist. Best known for his discovery of logarithms. https://en.wikipedia.org/wiki/John_Napier
-		"napier",
+		// Toby Ord - Oxford philosopher, author of "The Precipice", estimates high probability of AI-driven catastrophe. https://en.wikipedia.org/wiki/Toby_Ord
+		"ord",
 
-		// John Forbes Nash, Jr. - American mathematician who made fundamental contributions to game theory, differential geometry, and the study of partial differential equations. https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.
-		"nash",
+		// Niki Parmar - Co-author of "Attention Is All You Need", significant contributions to Transformer architecture and vision transformers. https://x.com/nikiparmar09
+		"parmar",
 
-		// John von Neumann - todays computer architectures are based on the von Neumann architecture. https://en.wikipedia.org/wiki/Von_Neumann_architecture
-		"neumann",
+		// Marc Raibert - Founder of Boston Dynamics, revolutionized dynamic robotics and legged locomotion. https://en.wikipedia.org/wiki/Marc_Raibert
+		"raibert",
 
-		// Isaac Newton invented classic mechanics and modern optics. https://en.wikipedia.org/wiki/Isaac_Newton
-		"newton",
+		// Gina Raimondo - US Secretary of Commerce, leading national AI policy and regulation. https://en.wikipedia.org/wiki/Gina_Raimondo
+		"raimondo",
 
-		// Florence Nightingale, more prominently known as a nurse, was also the first female member of the Royal Statistical Society and a pioneer in statistical graphics https://en.wikipedia.org/wiki/Florence_Nightingale#Statistics_and_sanitary_reform
-		"nightingale",
+		// Sebastian Raschka - Created widely-used ML educational content and open-source tools. https://github.com/rasbt
+		"raschka",
 
-		// Alfred Nobel - a Swedish chemist, engineer, innovator, and armaments manufacturer (inventor of dynamite) - https://en.wikipedia.org/wiki/Alfred_Nobel
-		"nobel",
+		// Nicholas Renotte - Creates comprehensive tutorials on implementing AI models. https://www.youtube.com/@NicholasRenotte
+		"renotte",
 
-		// Emmy Noether, German mathematician. Noether's Theorem is named after her. https://en.wikipedia.org/wiki/Emmy_Noether
-		"noether",
+		// Victor Riparbelli - CEO of Synthesia, pioneering AI video synthesis. https://x.com/vriparbelli
+		"riparbelli",
 
-		// Poppy Northcutt. Poppy Northcutt was the first woman to work as part of NASA’s Mission Control. http://www.businessinsider.com/poppy-northcutt-helped-apollo-astronauts-2014-12?op=1
-		"northcutt",
+		// Jonathan Ross - CEO of Groq, developing revolutionary AI accelerator chips and tensor processing units. https://x.com/JonathanRoss321
+		"ross",
 
-		// Robert Noyce invented silicon integrated circuits and gave Silicon Valley its name. - https://en.wikipedia.org/wiki/Robert_Noyce
-		"noyce",
+		// Wes Roth - Known for practical AI tutorials and implementation guides, particularly in LLMs and AI agents. https://x.com/JonathanRoss321
+		"roth",
 
-		// Panini - Ancient Indian linguist and grammarian from 4th century CE who worked on the world's first formal system - https://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini#Comparison_with_modern_formal_systems
-		"panini",
+		// David Rumelhart - Co-developed backpropagation algorithm, pioneered parallel distributed processing. https://en.wikipedia.org/wiki/David_Rumelhart
+		"rumelhart",
 
-		// Ambroise Pare invented modern surgery. https://en.wikipedia.org/wiki/Ambroise_Par%C3%A9
-		"pare",
+		// Cynthia Rudin - Pioneer in interpretable machine learning, advocate against black box models in high-stakes decisions. https://en.wikipedia.org/wiki/Cynthia_Rudin
+		"rudin",
 
-		// Blaise Pascal, French mathematician, physicist, and inventor - https://en.wikipedia.org/wiki/Blaise_Pascal
-		"pascal",
+		// Daniela Rus - MIT CSAIL director, pioneering work in reconfigurable robotics and autonomous systems. https://en.wikipedia.org/wiki/Daniela_Rus
+		"rus",
 
-		// Louis Pasteur discovered vaccination, fermentation and pasteurization. https://en.wikipedia.org/wiki/Louis_Pasteur.
-		"pasteur",
+		// Arthur Samuel - Coined term "machine learning", created first self-learning programs. https://en.wikipedia.org/wiki/Arthur_Samuel_(computer_scientist)
+		"samuel",
 
-		// Cecilia Payne-Gaposchkin was an astronomer and astrophysicist who, in 1925, proposed in her Ph.D. thesis an explanation for the composition of stars in terms of the relative abundances of hydrogen and helium. https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin
-		"payne",
-
-		// Radia Perlman is a software designer and network engineer and most famous for her invention of the spanning-tree protocol (STP). https://en.wikipedia.org/wiki/Radia_Perlman
-		"perlman",
-
-		// Rob Pike was a key contributor to Unix, Plan 9, the X graphic system, utf-8, and the Go programming language. https://en.wikipedia.org/wiki/Rob_Pike
-		"pike",
-
-		// Henri Poincaré made fundamental contributions in several fields of mathematics. https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9
-		"poincare",
-
-		// Laura Poitras is a director and producer whose work, made possible by open source crypto tools, advances the causes of truth and freedom of information by reporting disclosures by whistleblowers such as Edward Snowden. https://en.wikipedia.org/wiki/Laura_Poitras
-		"poitras",
-
-		// Tat’yana Avenirovna Proskuriakova (Russian: Татья́на Авени́ровна Проскуряко́ва) (January 23 [O.S. January 10] 1909 – August 30, 1985) was a Russian-American Mayanist scholar and archaeologist who contributed significantly to the deciphering of Maya hieroglyphs, the writing system of the pre-Columbian Maya civilization of Mesoamerica. https://en.wikipedia.org/wiki/Tatiana_Proskouriakoff
-		"proskuriakova",
-
-		// Claudius Ptolemy - a Greco-Egyptian writer of Alexandria, known as a mathematician, astronomer, geographer, astrologer, and poet of a single epigram in the Greek Anthology - https://en.wikipedia.org/wiki/Ptolemy
-		"ptolemy",
-
-		// C. V. Raman - Indian physicist who won the Nobel Prize in 1930 for proposing the Raman effect. - https://en.wikipedia.org/wiki/C._V._Raman
-		"raman",
-
-		// Srinivasa Ramanujan - Indian mathematician and autodidact who made extraordinary contributions to mathematical analysis, number theory, infinite series, and continued fractions. - https://en.wikipedia.org/wiki/Srinivasa_Ramanujan
-		"ramanujan",
-
-		// Ida Rhodes - American pioneer in computer programming, designed the first computer used for Social Security. https://en.wikipedia.org/wiki/Ida_Rhodes
-		"rhodes",
-
-		// Sally Kristen Ride was an American physicist and astronaut. She was the first American woman in space, and the youngest American astronaut. https://en.wikipedia.org/wiki/Sally_Ride
-		"ride",
-
-		// Dennis Ritchie - co-creator of UNIX and the C programming language. - https://en.wikipedia.org/wiki/Dennis_Ritchie
-		"ritchie",
-
-		// Julia Hall Bowman Robinson - American mathematician renowned for her contributions to the fields of computability theory and computational complexity theory. https://en.wikipedia.org/wiki/Julia_Robinson
-		"robinson",
-
-		// Wilhelm Conrad Röntgen - German physicist who was awarded the first Nobel Prize in Physics in 1901 for the discovery of X-rays (Röntgen rays). https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen
-		"roentgen",
-
-		// Rosalind Franklin - British biophysicist and X-ray crystallographer whose research was critical to the understanding of DNA - https://en.wikipedia.org/wiki/Rosalind_Franklin
-		"rosalind",
-
-		// Vera Rubin - American astronomer who pioneered work on galaxy rotation rates. https://en.wikipedia.org/wiki/Vera_Rubin
-		"rubin",
-
-		// Meghnad Saha - Indian astrophysicist best known for his development of the Saha equation, used to describe chemical and physical conditions in stars - https://en.wikipedia.org/wiki/Meghnad_Saha
-		"saha",
-
-		// Jean E. Sammet developed FORMAC, the first widely used computer language for symbolic manipulation of mathematical formulas. https://en.wikipedia.org/wiki/Jean_E._Sammet
-		"sammet",
-
-		// Mildred Sanderson - American mathematician best known for Sanderson's theorem concerning modular invariants. https://en.wikipedia.org/wiki/Mildred_Sanderson
+		// Grant Sanderson - Known for mathematical visualizations of ML concepts. https://www.youtube.com/c/3blue1brown
 		"sanderson",
 
-		// Satoshi Nakamoto is the name used by the unknown person or group of people who developed bitcoin, authored the bitcoin white paper, and created and deployed bitcoin's original reference implementation. https://en.wikipedia.org/wiki/Satoshi_Nakamoto
-		"satoshi",
+		// Marietje Schaake - International cyber policy leader, advocate for democratic AI governance. https://en.wikipedia.org/wiki/Marietje_Schaake
+		"schaake",
 
-		// Adi Shamir - Israeli cryptographer whose numerous inventions and contributions to cryptography include the Ferge Fiat Shamir identification scheme, the Rivest Shamir Adleman (RSA) public-key cryptosystem, the Shamir's secret sharing scheme, the breaking of the Merkle-Hellman cryptosystem, the TWINKLE and TWIRL factoring devices and the discovery of differential cryptanalysis (with Eli Biham). https://en.wikipedia.org/wiki/Adi_Shamir
-		"shamir",
+		// Jürgen Schmidhuber - Early deep learning and meta-learning pioneer, supervised LSTM development. https://en.wikipedia.org/wiki/Jürgen_Schmidhuber
+		"schmidhuber",
 
-		// Claude Shannon - The father of information theory and founder of digital circuit design theory. (https://en.wikipedia.org/wiki/Claude_Shannon)
+		// Terry Sejnowski - Pioneer in computational neuroscience and deep learning. https://en.wikipedia.org/wiki/Terry_Sejnowski
+		"sejnowski",
+
+		// Claude Shannon - Developed information theory fundamental to machine learning and neural networks. https://en.wikipedia.org/wiki/Claude_Shannon
 		"shannon",
 
-		// Carol Shaw - Originally an Atari employee, Carol Shaw is said to be the first female video game designer. https://en.wikipedia.org/wiki/Carol_Shaw_(video_game_designer)
-		"shaw",
+		// Noam Shazeer - Co-author of "Attention Is All You Need", invented the Mixture of Experts architecture, contributed to T5 and PaLM models. https://en.wikipedia.org/wiki/Noam_Shazeer
+		"shazeer",
 
-		// Dame Stephanie "Steve" Shirley - Founded a software company in 1962 employing women working from home. https://en.wikipedia.org/wiki/Steve_Shirley
-		"shirley",
+		// Divya Siddarth - Co-founder of Collective Intelligence Project, developing collective AI systems. https://en.wikipedia.org/wiki/Divya_Siddarth
+		"siddarth",
 
-		// William Shockley co-invented the transistor - https://en.wikipedia.org/wiki/William_Shockley
-		"shockley",
+		// Herbert Simon - Nobel laureate, developed bounded rationality theory, created Logic Theorist with Newell, pioneered heuristic problem solving in AI. https://en.wikipedia.org/wiki/Herbert_A._Simon
+		"simon",
 
-		// Lina Solomonovna Stern (or Shtern; Russian: Лина Соломоновна Штерн; 26 August 1878 – 7 March 1968) was a Soviet biochemist, physiologist and humanist whose medical discoveries saved thousands of lives at the fronts of World War II. She is best known for her pioneering work on blood–brain barrier, which she described as hemato-encephalic barrier in 1921. https://en.wikipedia.org/wiki/Lina_Stern
-		"shtern",
+		// Aravind Srinivas - CEO of Perplexity AI, developed neural architecture search methods at Google Brain, pioneered efficient transformer training techniques. https://x.com/AravSrinivas
+		"srinivas",
 
-		// Françoise Barré-Sinoussi - French virologist and Nobel Prize Laureate in Physiology or Medicine; her work was fundamental in identifying HIV as the cause of AIDS. https://en.wikipedia.org/wiki/Fran%C3%A7oise_Barr%C3%A9-Sinoussi
-		"sinoussi",
+		// Josh Starmer - Created StatQuest, developed intuitive explanations of ML algorithms, pioneered visual approach to teaching statistical concepts in AI. https://www.youtube.com/c/joshstarmer
+		"starmer",
 
-		// Betty Snyder - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Betty_Holberton
-		"snyder",
+		// YK Sugishita - Created CS Dojo, developed practical programming tutorials focusing on algorithms and ML fundamentals, pioneered accessible coding education. https://www.youtube.com/c/CSDojo
+		"sugishita",
 
-		// Cynthia Solomon - Pioneer in the fields of artificial intelligence, computer science and educational computing. Known for creation of Logo, an educational programming language.  https://en.wikipedia.org/wiki/Cynthia_Solomon
-		"solomon",
+		// Mustafa Suleyman - Co-founded DeepMind and Inflection AI, developed AI governance frameworks, authored "The Coming Wave" on AI's societal impact. https://en.wikipedia.org/wiki/Mustafa_Suleyman
+		"suleyman",
 
-		// Frances Spence - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Frances_Spence
-		"spence",
+		// Ilya Sutskever - Previously OpenAI Chief Scientist, pioneered deep learning for sequence prediction, developed key insights in neural network optimization and scaling laws. https://en.wikipedia.org/wiki/Ilya_Sutskever
+		"sutskever",
 
-		// Michael Stonebraker is a database research pioneer and architect of Ingres, Postgres, VoltDB and SciDB. Winner of 2014 ACM Turing Award. https://en.wikipedia.org/wiki/Michael_Stonebraker
-		"stonebraker",
+		// Jaan Tallinn - Skype co-founder, established Centre for the Study of Existential Risk, developed frameworks for AI x-risk assessment, major funder of AI alignment research. https://en.wikipedia.org/wiki/Jaan_Tallinn
+		"tallinn",
 
-		// Ivan Edward Sutherland - American computer scientist and Internet pioneer, widely regarded as the father of computer graphics. https://en.wikipedia.org/wiki/Ivan_Sutherland
-		"sutherland",
+		// Max Tegmark - Founded FLI and AI Safety Institute, developed mathematical universe hypothesis, authored influential AI safety frameworks in "Life 3.0". https://en.wikipedia.org/wiki/Max_Tegmark
+		"tegmark",
 
-		// Janese Swanson (with others) developed the first of the Carmen Sandiego games. She went on to found Girl Tech. https://en.wikipedia.org/wiki/Janese_Swanson
-		"swanson",
+		// Abhishek Thakur - First 4x Kaggle Grandmaster, developed automated ML pipeline frameworks, pioneered end-to-end approaches for competition-winning solutions. https://www.youtube.com/channel/UCBPRJjIWfyNG4X-CRbnv78A
+		"thakur",
 
-		// Aaron Swartz was influential in creating RSS, Markdown, Creative Commons, Reddit, and much of the internet as we know it today. He was devoted to freedom of information on the web. https://en.wikiquote.org/wiki/Aaron_Swartz
-		"swartz",
+		// Rachel Thomas - Co-founded fast.ai, developed practical ML curriculum focusing on ethics and accessibility, pioneered "top-down" teaching approach for deep learning. https://x.com/math_rachel
+		"thomas",
 
-		// Bertha Swirles was a theoretical physicist who made a number of contributions to early quantum theory. https://en.wikipedia.org/wiki/Bertha_Swirles
-		"swirles",
+		// Helen Toner - CSET Director, shaped OpenAI's governance model, developed frameworks for assessing AI capabilities and strategic implications. https://en.wikipedia.org/wiki/Helen_Toner
+		"toner",
 
-		// Helen Brooke Taussig - American cardiologist and founder of the field of paediatric cardiology. https://en.wikipedia.org/wiki/Helen_B._Taussig
-		"taussig",
+		// Cari Tuna - Co-founded Open Philanthropy, pioneered cause prioritization in AI safety funding, developed frameworks for long-term AI risk assessment. https://en.wikipedia.org/wiki/Cari_Tuna
+		"tuna",
 
-		// Nikola Tesla invented the AC electric system and every gadget ever used by a James Bond villain. https://en.wikipedia.org/wiki/Nikola_Tesla
-		"tesla",
-
-		// Marie Tharp - American geologist and oceanic cartographer who co-created the first scientific map of the Atlantic Ocean floor. Her work led to the acceptance of the theories of plate tectonics and continental drift. https://en.wikipedia.org/wiki/Marie_Tharp
-		"tharp",
-
-		// Ken Thompson - co-creator of UNIX and the C programming language - https://en.wikipedia.org/wiki/Ken_Thompson
-		"thompson",
-
-		// Linus Torvalds invented Linux and Git. https://en.wikipedia.org/wiki/Linus_Torvalds
-		"torvalds",
-
-		// Youyou Tu - Chinese pharmaceutical chemist and educator known for discovering artemisinin and dihydroartemisinin, used to treat malaria, which has saved millions of lives. Joint winner of the 2015 Nobel Prize in Physiology or Medicine. https://en.wikipedia.org/wiki/Tu_Youyou
-		"tu",
-
-		// Alan Turing was a founding father of computer science. https://en.wikipedia.org/wiki/Alan_Turing.
+		// Alan Turing - Developed Turing test, created foundations of computer science, pioneered machine intelligence concepts through mathematical formalization. https://en.wikipedia.org/wiki/Alan_Turing
 		"turing",
 
-		// Varahamihira - Ancient Indian mathematician who discovered trigonometric formulae during 505-587 CE - https://en.wikipedia.org/wiki/Var%C4%81hamihira#Contributions
-		"varahamihira",
+		// Jakob Uszkoreit - Co-authored transformer architecture, led development of BERT at Google, pioneered neural machine translation architectures. https://x.com/kyosu
+		"uszkoreit",
 
-		// Dorothy Vaughan was a NASA mathematician and computer programmer on the SCOUT launch vehicle program that put America's first satellites into space - https://en.wikipedia.org/wiki/Dorothy_Vaughan
-		"vaughan",
+		// Ashwini Vaishnaw - India's IT Minister, developed national AI compute infrastructure plan, leads implementation of AI regulation framework. https://en.wikipedia.org/wiki/Ashwini_Vaishnaw
+		"vaishnaw",
 
-		// Cédric Villani - French mathematician, won Fields Medal, Fermat Prize and Poincaré Price for his work in differential geometry and statistical mechanics. https://en.wikipedia.org/wiki/C%C3%A9dric_Villani
-		"villani",
+		// Leslie Valiant - Created PAC learning framework, developed computational learning theory, pioneered probably approximately correct approach to ML. https://en.wikipedia.org/wiki/Leslie_Valiant
+		"valiant",
 
-		// Sir Mokshagundam Visvesvaraya - is a notable Indian engineer.  He is a recipient of the Indian Republic's highest honour, the Bharat Ratna, in 1955. On his birthday, 15 September is celebrated as Engineer's Day in India in his memory - https://en.wikipedia.org/wiki/Visvesvaraya
-		"visvesvaraya",
+		// Shannon Vallor - Developed virtue ethics framework for AI, authored "AI & Moral Character", pioneered approaches for embedding ethics in AI development process. https://en.wikipedia.org/wiki/Shannon_Vallor
+		"vallor",
 
-		// Christiane Nüsslein-Volhard - German biologist, won Nobel Prize in Physiology or Medicine in 1995 for research on the genetic control of embryonic development. https://en.wikipedia.org/wiki/Christiane_N%C3%BCsslein-Volhard
-		"volhard",
+		// Vladimir Vapnik - Created Statistical Learning Theory, developed Support Vector Machines (SVM), pioneered VC dimension theory for machine learning. https://en.wikipedia.org/wiki/Vladimir_Vapnik
+		"vapnik",
 
-		// Marlyn Wescoff - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Marlyn_Meltzer
-		"wescoff",
+		// Guillaume Verdon - "Beff Jezos" - founded Extropic, developed quantum tensor networks for AI, pioneered quantum-classical hybrid algorithms for machine learning. https://scholar.google.com/citations?user=DxFnepkAAAAJ
+		"verdon",
 
-		// Sylvia B. Wilbur - British computer scientist who helped develop the ARPANET, was one of the first to exchange email in the UK and a leading researcher in computer-supported collaborative work. https://en.wikipedia.org/wiki/Sylvia_Wilbur
-		"wilbur",
+		// Ashish Vaswani - Lead author of "Attention Is All You Need", developed transformer architecture at Google Brain, pioneered self-attention mechanisms. https://scholar.google.com/citations?user=bIU5MXUAAAAJ
+		"vaswani",
 
-		// Andrew Wiles - Notable British mathematician who proved the enigmatic Fermat's Last Theorem - https://en.wikipedia.org/wiki/Andrew_Wiles
-		"wiles",
+		// C.C. Wei - TSMC CEO, developed 3nm/2nm processes for AI chips, leads development of specialized AI semiconductor manufacturing. https://en.wikipedia.org/wiki/C.C._Wei
+		"wei",
 
-		// Roberta Williams, did pioneering work in graphical adventure games for personal computers, particularly the King's Quest series. https://en.wikipedia.org/wiki/Roberta_Williams
-		"williams",
+		// Meredith Whittaker - Co-founded AI Now Institute, led Google's internal AI ethics protests, developed frameworks for algorithmic accountability. https://en.wikipedia.org/wiki/Meredith_Whittaker
+		"whittaker",
 
-		// Malcolm John Williamson - British mathematician and cryptographer employed by the GCHQ. Developed in 1974 what is now known as Diffie-Hellman key exchange (Diffie and Hellman first published the scheme in 1976). https://en.wikipedia.org/wiki/Malcolm_J._Williamson
-		"williamson",
+		// Norbert Wiener - Founded cybernetics field, developed feedback control theory, authored "Cybernetics" connecting computation and control. https://en.wikipedia.org/wiki/Norbert_Wiener
+		"wiener",
 
-		// Sophie Wilson designed the first Acorn Micro-Computer and the instruction set for ARM processors. https://en.wikipedia.org/wiki/Sophie_Wilson
-		"wilson",
+		// Thomas Wolf - Co-founded Hugging Face, developed transformers library, pioneered open-source model sharing and collaborative AI development. https://x.com/Thom_Wolf
+		"wolf",
 
-		// Jeannette Wing - co-developed the Liskov substitution principle. - https://en.wikipedia.org/wiki/Jeannette_Wing
-		"wing",
-
-		// Steve Wozniak invented the Apple I and Apple II. https://en.wikipedia.org/wiki/Steve_Wozniak
+		// Steve Wozniak - Co-founded Apple, developed early personal computing architectures, advocates for ethical AI development and privacy rights. https://en.wikipedia.org/wiki/Steve_Wozniak
 		"wozniak",
 
-		// The Wright brothers, Orville and Wilbur - credited with inventing and building the world's first successful airplane and making the first controlled, powered and sustained heavier-than-air human flight - https://en.wikipedia.org/wiki/Wright_brothers
-		"wright",
+		// Wang Xiaochuan - Founded Baichuan AI, developed open-source LLMs in China, pioneered bilingual model architectures and training techniques. https://en.wikipedia.org/wiki/Wang_Xiaochuan
+		"xiaochuan",
 
-		// Chien-Shiung Wu - Chinese-American experimental physicist who made significant contributions to nuclear physics. https://en.wikipedia.org/wiki/Chien-Shiung_Wu
-		"wu",
+		// Tom Yeh - Pioneered "AI by hand" approach, developed novel techniques for human-AI collaboration in art and design, leads research on interpretable AI visualization. https://x.com/proftomyeh
+		"yeh",
 
-		// Rosalyn Sussman Yalow - Rosalyn Sussman Yalow was an American medical physicist, and a co-winner of the 1977 Nobel Prize in Physiology or Medicine for development of the radioimmunoassay technique. https://en.wikipedia.org/wiki/Rosalyn_Sussman_Yalow
-		"yalow",
+		// Eliezer Yudkowsky - Founded MIRI, developed coherent extrapolated volition framework, authored "Rationality: A-Z", pioneered early work on AI alignment theory. https://en.wikipedia.org/wiki/Eliezer_Yudkowsky
+		"yudkowsky",
 
-		// Ada Yonath - an Israeli crystallographer, the first woman from the Middle East to win a Nobel prize in the sciences. https://en.wikipedia.org/wiki/Ada_Yonath
-		"yonath",
+		// Károly Zsolnai-Fehér - Created Two Minute Papers, developed novel techniques for explaining complex AI research, pioneered accessible ML education through visual demonstrations. https://www.youtube.com/c/K%C3%A1rolyZsolnai
+		"zsolnai",
 
-		// Nikolay Yegorovich Zhukovsky (Russian: Никола́й Его́рович Жуко́вский, January 17 1847 – March 17, 1921) was a Russian scientist, mathematician and engineer, and a founding father of modern aero- and hydrodynamics. Whereas contemporary scientists scoffed at the idea of human flight, Zhukovsky was the first to undertake the study of airflow. He is often called the Father of Russian Aviation. https://en.wikipedia.org/wiki/Nikolay_Yegorovich_Zhukovsky
-		"zhukovsky",
+		// Mark Zuckerberg - Meta CEO, leads development of large language models like LLaMA, pioneered open-source AI model releases, drives AI integration in social platforms. https://en.wikipedia.org/wiki/Mark_Zuckerberg
+		"zuckerberg",
+
+		// David Silver - DeepMind research scientist who led AlphaGo project, pioneering work in reinforcement learning and game-playing AI. https://en.wikipedia.org/wiki/David_Silver_(computer_scientist)
+		"silver",
+
+		// Lisa Su - AMD CEO leading development of AI accelerators and neural engine processors, pioneered chiplet architecture for AI. https://en.wikipedia.org/wiki/Lisa_Su
+		"su",
+
+		// Andrew Feldman - Founded Cerebras Systems, developed world's largest AI chip and wafer-scale engine technology. https://x.com/andrewdfeldman
+		"feldman",
+
+		// Yanjun Ma - Chief Scientist at Alibaba DAMO Academy, pioneering work in large-scale AI systems and multilingual models. https://scholar.google.com/citations?user=tVWZjPwAAAAJ
+		"ma",
+
+		// Terry Winograd - Created SHRDLU natural language system in 1970, pioneer in AI natural language processing. https://en.wikipedia.org/wiki/Terry_Winograd
+		"winograd",
+
+		// Finale Doshi-Velez - Harvard professor pioneering interpretable machine learning and trustworthy AI systems. https://en.wikipedia.org/wiki/Finale_Doshi-Velez
+		"doshivelez",
 	}
 )
 
@@ -838,7 +532,7 @@ var (
 func Generate(retry int) string {
 begin:
 	name := left[rand.Intn(len(left))] + "_" + right[rand.Intn(len(right))] //nolint:gosec // G404: Use of weak random number generator (math/rand instead of crypto/rand)
-	if name == "boring_wozniak" /* Steve Wozniak is not boring */ {
+	if name == "honest_altman" /* Sam Altman is not honest */ {
 		goto begin
 	}
 
