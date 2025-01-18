@@ -26,7 +26,6 @@ var (
 		"prompting",
 		"embedding",
 		"recursive",
-		"reasoning",
 		"sentient",
 		"stochastic",
 		"accelerating",
@@ -44,6 +43,7 @@ var (
 		"cautious",
 		"regulated",
 		"unsupervised",
+		"honest",
 		"reinforced",
 		"hypertuned",
 		"benchmark",
@@ -53,7 +53,6 @@ var (
 		"autonomous",
 		"augmented",
 		"attentive",
-		"transforming",
 		"existential",
 		"debugging",
 		"prompted",
@@ -61,21 +60,13 @@ var (
 		"algorithmic",
 		"ethical",
 		"wary",
-		"cautious",
 		"regulating",
 		"realistic",
 		"doompilled",
 		"cracked",
 		"cooked",
-		"unhinged",
-		"cryptic",
-		"caffeinated",
-		"spicy",
-		"vibing",
-		"unhinged",
 		"exponential",
 		"transcendent",
-		"honest",
 	}
 
 	// This list generates names from notable AI/ML scientists, hackers, philosophers, and other notables.
@@ -324,9 +315,6 @@ var (
 		"michie",
 
 		// Marvin Minsky - Co-founder of MIT's AI laboratory and author of foundational works in AI. https://en.wikipedia.org/wiki/Marvin_Minsky
-		"minsky",
-
-		// Marvin Minsky - Co-founded MIT's AI Lab, developed first neural network simulator (SNARC), authored "Society of Mind" theory of human cognition, pioneered symbolic AI. https://en.wikipedia.org/wiki/Marvin_Minsky
 		"minsky",
 
 		// Margaret Mitchell - Founded Google's AI ethics team, developed frameworks for model documentation and testing, pioneered work on AI fairness and accountability. https://x.com/mmitchell_ai
